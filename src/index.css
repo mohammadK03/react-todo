@@ -9,7 +9,8 @@ body {
   margin: 0;
   font-family: vazir-medium !important;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #007991, #78ffd6);
+  background: linear-gradient(to bottom, #007991, #78ffd6) no-repeat;
+  background-size: cover;
 }
 
 code {
@@ -24,33 +25,13 @@ form {
   display: flex;
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin: 150px auto;
+  margin: 50px auto;
   border-radius: 15px;
 }
 
 p, h1, h2, h3, h4, h5, h6, label, button {
   margin-bottom: 0 !important;
   font-family: vazir-medium !important;
-}
-
-.todo-list-container {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.todo {
-  background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  height: auto;
-  margin: 10px;
 }
 
 .form {
@@ -64,6 +45,7 @@ p, h1, h2, h3, h4, h5, h6, label, button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: vazir-medium !important;
 }
 
 .h100 {
@@ -71,10 +53,6 @@ p, h1, h2, h3, h4, h5, h6, label, button {
 }
 .w100 {
   width: 100%;
-}
-
-.App {
-  height: 100vh;
 }
 
 .plan {
@@ -93,4 +71,21 @@ p, h1, h2, h3, h4, h5, h6, label, button {
   margin: auto;
   text-align: center;
   font-weight: 700;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+form {
+  background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-family: vazir-medium !important;
+}
+
+.error {
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: red;
 }
