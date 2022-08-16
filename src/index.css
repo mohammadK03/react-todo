@@ -1,13 +1,96 @@
+@font-face{
+  font-family:'vazir-medium';
+  font-style: normal;
+  font-display: swap;
+  src:url('./fonts/Vazir-Medium.ttf')
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: vazir-medium !important;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #007991, #78ffd6);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+form {
+  width: 450px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 150px auto;
+  border-radius: 15px;
+}
+
+p, h1, h2, h3, h4, h5, h6, label, button {
+  margin-bottom: 0 !important;
+  font-family: vazir-medium !important;
+}
+
+.todo-list-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.todo {
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+  margin: 10px;
+}
+
+.form {
+  margin: 200px auto;
+  background-color: #fff;
+  width: 500px;
+  height: auto;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h100 {
+  height: 100%;
+}
+.w100 {
+  width: 100%;
+}
+
+.App {
+  height: 100vh;
+}
+
+.plan {
+  background: whitesmoke;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.btn-danger {
+  height: 40px;
+}
+
+
+.no-plan-text {
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
 }
