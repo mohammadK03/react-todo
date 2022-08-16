@@ -89,3 +89,24 @@ form {
   line-height: 1.5rem;
   color: red;
 }
+
+.not-found {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  background: #fff;
+}
+.not-found a {
+  margin-top: 20px;
+  height: 40px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: wheat;
+}

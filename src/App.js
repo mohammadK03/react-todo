@@ -5,6 +5,7 @@ import BrandExample from './components/BrandExample'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Form2 from './components/Form2';
 import { ToastContainer, toast } from 'react-toastify';
+import NotFound from './components/NotFound';
 
 function App() {
   const [plans, setPlans] = useState([]);
@@ -85,6 +86,7 @@ function App() {
               </div>
             }></Route>
             <Route path='/signup' element={<Form2 />}></Route>
+            <Route path='*' element={<NotFound />}></Route>
           </Routes>
         </Router>
 
